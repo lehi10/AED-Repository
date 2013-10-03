@@ -1,0 +1,12 @@
+A : Primera letra del abecedario.
+B : Segunda letra del abecedario.
+C : Tercera letra del abecedario.
+D : Cuarta letra del abecedario.
+E :Tercera palabra en el abecedario.
+H :Sexta palabra en el abecedario.
+J :Octava letra del abecedario.
+I :Septima letra del abecedario.
+K :Novena letra del abecedario
+L :Decima letra del abecedario.
+Abaco :Tablero contador por bolas perforadas que corren sobre alambres paralelos.
+gato :animal que pertenece al grupo de los felinos.
