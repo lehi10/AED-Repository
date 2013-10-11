@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+void maxheapify(int a[],int length,int i)
+{
+    int left=2*i;
+    int right=2*i+1;
+    int largest=i;
+    if(left<length && a[left]>a[largest])
+    {
+        largest=left;
+
+    }
+    if ( right<length && a[right]>a[largest])
+    {
+        largest=right;
+    }
+
+    if(largest!=i)
+    {
+int temp=a[i];
+a[i]=a[largest];
+a[largest]=temp;
+maxheapify(a,length,largest);
+
+    }
+
+}
+void buildmax(int a[],int length)
+{
+    for(int i=(length-1)/2;i>=0;i--)
+    {
+        maxheapify(a,length,i);
+
+    }
+
+
+}
+/*void heapsort(int a[],int length)
+{
+    buildmax(a,length);
+    for(int i=length-1;i>0;i--)
+    {
+        int temp=a[i];
+        a[i]=a[0];
+        a[0]=temp;
+        maxheapify(a,i,0);
+
+
+    }
+
+
+}
+*/
+ void combine_heap(int a[],int n,int b[],int m,int c[])
+ {
+
+ }
+int main()
+{
+    int a[100];
+    int n=sizeof(a)/sizeof(a[0]);
+
+    int b[100];
+    int m=sizeof(b)/sizeof(b[0]);
+    int c[200];
+    int length=sizeof(a)/sizeof(a[0]);
+    for(int i=0;i<length;i++){
+        a[i]=34+rand()%(length-33);
+         b[i]=rand()%(i+1);
+            }
+    /*heapsort(a,length);*/
+    /*for(int i=0;i<length;i++)
+        cout<<a[i]<<"  ";*/
+
+
+    return 0;
+}
